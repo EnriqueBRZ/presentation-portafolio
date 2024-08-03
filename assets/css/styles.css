@@ -1,0 +1,145 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto';
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.header__top {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title h1 {
+    font-size: 7rem;
+    color: #23282b;
+    text-shadow: 0 0 3px #ddd;
+}
+
+.header__title h2 {
+    font-size: 3rem;
+    color: #ccc;
+    text-shadow: 0 0 1px black;
+}
+
+.header__foot {
+    margin-bottom: 1rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__top img,
+.header__foot img {
+    height: 11rem;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    transition: all 300ms ease-in;    
+}
+
+.header__aside {
+    grid-area: 1 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.header__aside img {
+    height: 5rem;
+}
+
+.header__top img:hover,
+.header__foot img:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px whitesmoke inset;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #a32fec, #ebc746);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+    width: 115px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+  h2 {
+    font-size: 4rem;
+    color: #2ba977;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 0 1px #00bfff;
+    opacity: 0.8;
+  }
+
+  button > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  button {
+    opacity: 0.9;
+    transition: all 300ms ease-in-out;
+  }
+
+  button:hover {
+    color: #ccc;
+    text-shadow: 0 0 1px #fff;
+  }
+
+  #picture {
+    border: 1.5px solid transparent;
+    border-radius: 30px;
+    box-shadow: 0 0 4px #00bfff;
+  }
